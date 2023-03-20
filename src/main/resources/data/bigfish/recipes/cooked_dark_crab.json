@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "bigfish:dark_crab"
+  },
+  "result": "bigfish:cooked_dark_crab",
+  "experience": 0.35,
+  "cookingtime": 200
+}

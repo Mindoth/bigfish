@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "bigfish:swordfish"
+  },
+  "result": "bigfish:cooked_swordfish",
+  "experience": 0.35,
+  "cookingtime": 100
+}

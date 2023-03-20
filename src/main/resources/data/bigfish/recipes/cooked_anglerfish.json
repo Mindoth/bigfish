@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "bigfish:anglerfish"
+  },
+  "result": "bigfish:cooked_anglerfish",
+  "experience": 0.35,
+  "cookingtime": 200
+}

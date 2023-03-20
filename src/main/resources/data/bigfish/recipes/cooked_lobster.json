@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "bigfish:lobster"
+  },
+  "result": "bigfish:cooked_lobster",
+  "experience": 0.35,
+  "cookingtime": 200
+}

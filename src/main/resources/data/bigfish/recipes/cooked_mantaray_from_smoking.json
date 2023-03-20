@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "bigfish:mantaray"
+  },
+  "result": "bigfish:cooked_mantaray",
+  "experience": 0.35,
+  "cookingtime": 100
+}

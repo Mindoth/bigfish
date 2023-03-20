@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "bigfish:mantaray",
+    "bigfish:anglerfish",
+    "bigfish:shark",
+    "bigfish:monkfish",
+    "bigfish:swordfish",
+    "bigfish:lobster",
+    "bigfish:cooked_mantaray",
+    "bigfish:cooked_anglerfish",
+    "bigfish:cooked_shark",
+    "bigfish:cooked_monkfish",
+    "bigfish:cooked_swordfish",
+    "bigfish:cooked_lobster"
+  ]
+}
