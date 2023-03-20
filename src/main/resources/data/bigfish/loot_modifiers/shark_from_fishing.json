@@ -3,23 +3,6 @@
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:gameplay/fishing"
-    },
-    {
-      "condition": "minecraft:alternative",
-      "terms": [
-        {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "biome": "minecraft:cold_ocean"
-          }
-        },
-        {
-          "condition": "minecraft:location_check",
-          "predicate": {
-            "biome": "minecraft:deep_cold_ocean"
-          }
-        }
-      ]
     }
   ],
   "item": "bigfish:shark",

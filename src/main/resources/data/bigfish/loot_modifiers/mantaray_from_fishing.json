@@ -3,12 +3,6 @@
     {
       "condition": "forge:loot_table_id",
       "loot_table_id": "minecraft:gameplay/fishing"
-    },
-    {
-      "condition": "minecraft:location_check",
-      "predicate": {
-        "biome": "minecraft:warm_ocean"
-      }
     }
   ],
   "item": "bigfish:mantaray",

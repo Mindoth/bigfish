@@ -3,11 +3,11 @@ package net.mindoth.bigfish.event;
 import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import net.mindoth.bigfish.BigFish;
 import net.mindoth.bigfish.registry.BigFishItems;
-import net.minecraft.world.entity.npc.VillagerProfession;
-import net.minecraft.world.entity.npc.VillagerTrades;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.trading.MerchantOffer;
+import net.minecraft.entity.merchant.villager.VillagerProfession;
+import net.minecraft.entity.merchant.villager.VillagerTrades;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.item.MerchantOffer;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,7 +21,7 @@ public class CommonEvents {
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 5;
 
@@ -30,7 +30,7 @@ public class CommonEvents {
                     stack,12,30,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 5;
 
@@ -40,7 +40,7 @@ public class CommonEvents {
         }
 
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 4;
 
@@ -49,7 +49,7 @@ public class CommonEvents {
                     stack,12,30,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 4;
 
@@ -59,7 +59,7 @@ public class CommonEvents {
         }
 
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 3;
 
@@ -68,7 +68,7 @@ public class CommonEvents {
                     stack,16,20,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 3;
 
@@ -78,7 +78,7 @@ public class CommonEvents {
         }
 
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 2;
 
@@ -87,7 +87,7 @@ public class CommonEvents {
                     stack,16,10,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
-            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
             ItemStack stack = new ItemStack(Items.EMERALD, 2);
             int villagerLevel = 2;
 
