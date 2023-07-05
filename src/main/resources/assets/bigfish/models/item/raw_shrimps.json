@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bigfish:items/cooked_swordfish"
+    "layer0": "bigfish:items/raw_shrimps"
   }
 }

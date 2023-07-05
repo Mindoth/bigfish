@@ -17,13 +17,13 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
-public class LobsterAdditionModifier extends LootModifier {
-    public static final Supplier<Codec<LobsterAdditionModifier>> CODEC = Suppliers.memoize(()
+public class ShrimpsAdditionsModifier extends LootModifier {
+    public static final Supplier<Codec<ShrimpsAdditionsModifier>> CODEC = Suppliers.memoize(()
             -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
-            .fieldOf("item").forGetter(m -> m.item)).apply(inst, LobsterAdditionModifier::new)));
+            .fieldOf("item").forGetter(m -> m.item)).apply(inst, ShrimpsAdditionsModifier::new)));
     private final Item item;
 
-    protected LobsterAdditionModifier(LootItemCondition[] conditionsIn, Item item) {
+    protected ShrimpsAdditionsModifier(LootItemCondition[] conditionsIn, Item item) {
         super(conditionsIn);
         this.item = item;
     }
@@ -33,7 +33,7 @@ public class LobsterAdditionModifier extends LootModifier {
         if ( generatedLoot.get(0).is(ItemTags.FISHES) ) {
             if ( context.getRandom().nextDouble() <= BigFishCommonConfig.SPECIAL_FISH_CHANCE.get() ) {
                 generatedLoot.clear();
-                generatedLoot.add(new ItemStack(item, 1));
+                generatedLoot.add(new ItemStack(item, 2));
             }
         }
         return generatedLoot;

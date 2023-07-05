@@ -14,13 +14,13 @@ import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
+
 import java.util.function.Supplier;
 
 public class MantarayAdditionModifier extends LootModifier {
     public static final Supplier<Codec<MantarayAdditionModifier>> CODEC = Suppliers.memoize(()
             -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
             .fieldOf("item").forGetter(m -> m.item)).apply(inst, MantarayAdditionModifier::new)));
-
     private final Item item;
 
     protected MantarayAdditionModifier(LootItemCondition[] conditionsIn, Item item) {
@@ -37,6 +37,7 @@ public class MantarayAdditionModifier extends LootModifier {
             }
         }
         return generatedLoot;
+
     }
 
     @Override

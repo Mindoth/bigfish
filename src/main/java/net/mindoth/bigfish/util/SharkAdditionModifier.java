@@ -14,13 +14,13 @@ import net.minecraftforge.common.loot.IGlobalLootModifier;
 import net.minecraftforge.common.loot.LootModifier;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.jetbrains.annotations.NotNull;
+
 import java.util.function.Supplier;
 
 public class SharkAdditionModifier extends LootModifier {
     public static final Supplier<Codec<SharkAdditionModifier>> CODEC = Suppliers.memoize(()
             -> RecordCodecBuilder.create(inst -> codecStart(inst).and(ForgeRegistries.ITEMS.getCodec()
             .fieldOf("item").forGetter(m -> m.item)).apply(inst, SharkAdditionModifier::new)));
-
     private final Item item;
 
     protected SharkAdditionModifier(LootItemCondition[] conditionsIn, Item item) {
@@ -37,6 +37,7 @@ public class SharkAdditionModifier extends LootModifier {
             }
         }
         return generatedLoot;
+
     }
 
     @Override
