@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "bigfish:swordfish"
+    "item": "bigfish:raw_swordfish"
   },
   "result": "bigfish:cooked_swordfish",
   "experience": 0.35,

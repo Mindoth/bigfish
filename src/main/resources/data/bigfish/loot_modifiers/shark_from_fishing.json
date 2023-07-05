@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:gameplay/fishing"
     }
   ],
-  "item": "bigfish:shark",
+  "item": "bigfish:raw_shark",
   "type": "bigfish:shark_from_fishing"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "bigfish:items/dark_crab"
+    "layer0": "bigfish:items/raw_mantaray"
   }
 }

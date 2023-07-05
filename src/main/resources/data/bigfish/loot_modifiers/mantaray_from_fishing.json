@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:gameplay/fishing"
     }
   ],
-  "item": "bigfish:mantaray",
+  "item": "bigfish:raw_mantaray",
   "type": "bigfish:mantaray_from_fishing"
 }

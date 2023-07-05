@@ -5,6 +5,6 @@
       "loot_table_id": "minecraft:gameplay/fishing"
     }
   ],
-  "item": "bigfish:slimy_eel",
+  "item": "bigfish:raw_slimy_eel",
   "type": "bigfish:slimy_eel_from_fishing"
 }

@@ -1,9 +1,9 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "bigfish:raw_slimy_eel"
+    "item": "bigfish:raw_shrimps"
   },
-  "result": "bigfish:cooked_slimy_eel",
+  "result": "bigfish:cooked_shrimps",
   "experience": 0.35,
   "cookingtime": 100
 }

@@ -26,7 +26,7 @@ public class CommonEvents {
             int villagerLevel = 5;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.DARK_CRAB.get(), 4),
+                    new ItemStack(BigFishItems.RAW_DARK_CRAB.get(), 4),
                     stack,12,30,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
@@ -35,7 +35,7 @@ public class CommonEvents {
             int villagerLevel = 5;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.MANTARAY.get(), 4),
+                    new ItemStack(BigFishItems.RAW_MANTARAY.get(), 4),
                     stack,12,30,0.05F));
         }
 
@@ -45,7 +45,7 @@ public class CommonEvents {
             int villagerLevel = 4;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.SHARK.get(), 6),
+                    new ItemStack(BigFishItems.RAW_SHARK.get(), 6),
                     stack,12,30,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
@@ -54,7 +54,7 @@ public class CommonEvents {
             int villagerLevel = 4;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.ANGLERFISH.get(), 6),
+                    new ItemStack(BigFishItems.RAW_ANGLERFISH.get(), 6),
                     stack,12,30,0.05F));
         }
 
@@ -64,7 +64,7 @@ public class CommonEvents {
             int villagerLevel = 3;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.MONKFISH.get(), 13),
+                    new ItemStack(BigFishItems.RAW_MONKFISH.get(), 13),
                     stack,16,20,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
@@ -73,7 +73,7 @@ public class CommonEvents {
             int villagerLevel = 3;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.SWORDFISH.get(), 13),
+                    new ItemStack(BigFishItems.RAW_SWORDFISH.get(), 13),
                     stack,16,20,0.05F));
         }
 
@@ -83,7 +83,7 @@ public class CommonEvents {
             int villagerLevel = 2;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.LOBSTER.get(), 15),
+                    new ItemStack(BigFishItems.RAW_LOBSTER.get(), 15),
                     stack,16,10,0.05F));
         }
         if(event.getType() == VillagerProfession.FISHERMAN) {
@@ -92,8 +92,17 @@ public class CommonEvents {
             int villagerLevel = 2;
 
             trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
-                    new ItemStack(BigFishItems.SLIMY_EEL.get(), 15),
+                    new ItemStack(BigFishItems.RAW_SLIMY_EEL.get(), 15),
                     stack,16,10,0.05F));
+        }
+        if(event.getType() == VillagerProfession.FISHERMAN) {
+            Int2ObjectMap<List<VillagerTrades.ITrade>> trades = event.getTrades();
+            ItemStack stack = new ItemStack(Items.EMERALD, 2);
+            int villagerLevel = 1;
+
+            trades.get(villagerLevel).add((trader, rand) -> new MerchantOffer(
+                    new ItemStack(BigFishItems.RAW_SHRIMPS.get(), 15),
+                    stack,16,5,0.05F));
         }
     }
 }
