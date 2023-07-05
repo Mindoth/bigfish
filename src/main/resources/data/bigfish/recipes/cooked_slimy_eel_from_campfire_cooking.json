@@ -1,7 +1,7 @@
 {
   "type": "minecraft:campfire_cooking",
   "ingredient": {
-    "item": "bigfish:slimy_eel"
+    "item": "bigfish:raw_slimy_eel"
   },
   "result": "bigfish:cooked_slimy_eel",
   "experience": 0.35,

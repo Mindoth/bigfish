@@ -29,7 +29,9 @@ public class LootModifierEvents {
                 new LobsterAdditionModifier.Serializer().setRegistryName
                         (new ResourceLocation(BigFish.MOD_ID, "lobster_from_fishing")),
                 new SlimyEelAdditionModifier.Serializer().setRegistryName
-                        (new ResourceLocation(BigFish.MOD_ID, "slimy_eel_from_fishing"))
+                        (new ResourceLocation(BigFish.MOD_ID, "slimy_eel_from_fishing")),
+                new ShrimpsAdditionsModifier.Serializer().setRegistryName
+                        (new ResourceLocation(BigFish.MOD_ID, "shrimps_from_fishing"))
         );
     }
 }
