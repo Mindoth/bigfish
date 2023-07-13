@@ -31,7 +31,7 @@ public class SlimyEelAdditionModifier extends LootModifier {
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if ( generatedLoot.get(0).is(ItemTags.FISHES) ) {
-            if ( context.getRandom().nextDouble() <= BigFishCommonConfig.SPECIAL_FISH_CHANCE.get() ) {
+            if ( context.getRandom().nextDouble() <= BigFishCommonConfig.SLIMYEEL_CHANCE.get() ) {
                 generatedLoot.clear();
                 generatedLoot.add(new ItemStack(item, 1));
             }
