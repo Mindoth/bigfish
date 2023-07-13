@@ -29,7 +29,7 @@ public class SwordfishAdditionModifier extends LootModifier {
     public List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
 
         if ( generatedLoot.get(0).getItem().is(ItemTags.FISHES) ) {
-            if ( context.getRandom().nextDouble() <= BigFishCommonConfig.SPECIAL_FISH_CHANCE.get() ) {
+            if ( context.getRandom().nextDouble() <= BigFishCommonConfig.SWORDFISH_CHANCE.get() ) {
                 generatedLoot.clear();
                 generatedLoot.add(new ItemStack(addedItem, 1));
             }
