@@ -29,7 +29,7 @@ public class AnglerfishAdditionModifier extends LootModifier {
     public List<ItemStack> doApply(List<ItemStack> generatedLoot, LootContext context) {
         if ( generatedLoot.get(0).getItem().is(ItemTags.FISHES) ) {
             double r = context.getRandom().nextDouble();
-            if ( r <= BigFishCommonConfig.ANGLERFISH_CHANCE.get() && r > 0 ) {
+            if ( r <= BigFishCommonConfig.ANGLERFISH_CHANCE.get() && BigFishCommonConfig.ANGLERFISH_CHANCE.get() > 0 ) {
                 generatedLoot.clear();
                 generatedLoot.add(new ItemStack(addedItem, 1));
             }
