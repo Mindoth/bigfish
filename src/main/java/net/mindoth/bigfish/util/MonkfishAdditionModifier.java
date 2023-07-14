@@ -32,7 +32,7 @@ public class MonkfishAdditionModifier extends LootModifier {
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if ( generatedLoot.get(0).is(ItemTags.FISHES) ) {
             double r = context.getRandom().nextDouble();
-            if ( r <= BigFishCommonConfig.MONKFISH_CHANCE.get() && r > 0 ) {
+            if ( r <= BigFishCommonConfig.MONKFISH_CHANCE.get() && BigFishCommonConfig.MONKFISH_CHANCE.get() > 0 ) {
                 generatedLoot.clear();
                 generatedLoot.add(new ItemStack(item, 1));
             }
