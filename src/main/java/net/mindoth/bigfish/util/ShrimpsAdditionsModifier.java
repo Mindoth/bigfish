@@ -31,7 +31,8 @@ public class ShrimpsAdditionsModifier extends LootModifier {
     @Override
     protected @NotNull ObjectArrayList<ItemStack> doApply(ObjectArrayList<ItemStack> generatedLoot, LootContext context) {
         if ( generatedLoot.get(0).is(ItemTags.FISHES) ) {
-            if ( context.getRandom().nextDouble() <= BigFishCommonConfig.SHRIMPS_CHANCE.get() ) {
+            double r = context.getRandom().nextDouble();
+            if ( r <= BigFishCommonConfig.SHRIMPS_CHANCE.get() && r > 0 ) {
                 generatedLoot.clear();
                 generatedLoot.add(new ItemStack(item, 2));
             }
