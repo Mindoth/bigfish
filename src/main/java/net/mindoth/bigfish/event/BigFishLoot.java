@@ -31,7 +31,7 @@ public class BigFishLoot {
         if ( event.getName().equals(BuiltInLootTables.FISHING) ) {
             LootPool pool = event.getTable().getPool("main");
             if ( pool != null ) {
-                addEntry(pool, getInjectEntry(FISH, 100, 1));
+                addEntry(pool, getInjectEntry(FISH, 100, -1));
             }
         }
     }

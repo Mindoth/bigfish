@@ -2,326 +2,467 @@
   "type": "minecraft:fishing",
   "pools": [
     {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:lush_caves"
+          }
+        }
+      ],
       "rolls": 1.0,
-      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:lush_caves"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 50,
-          "name": "bigfish:raw_dark_crab"
+          "name": "bigfish:raw_dark_crab",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:dripstone_caves"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_slimy_eel",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:swamp"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_slimy_eel",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:warm_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_mantaray",
+          "weight": 50
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:warm_ocean"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 50,
-          "name": "bigfish:raw_mantaray"
+          "name": "bigfish:raw_shark",
+          "weight": 10
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_frozen_ocean"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 40,
-          "name": "bigfish:raw_anglerfish"
+          "name": "bigfish:raw_swordfish",
+          "weight": 35
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:lukewarm_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_lukewarm_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:cold_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_cold_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:frozen_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_frozen_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:warm_ocean"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 20,
-          "name": "bigfish:raw_shark"
+          "name": "bigfish:raw_lobster",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:lukewarm_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:lukewarm_ocean"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 50,
-          "name": "bigfish:raw_monkfish"
+          "name": "bigfish:raw_monkfish",
+          "weight": 50
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:lukewarm_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_lukewarm_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:warm_ocean"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 30,
-          "name": "bigfish:raw_swordfish"
+          "name": "bigfish:raw_swordfish",
+          "weight": 30
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:beach"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:stony_shore"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:snowy_beach"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:lukewarm_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:warm_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:cold_ocean"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:frozen_ocean"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 30,
-          "name": "bigfish:raw_lobster"
+          "name": "bigfish:raw_lobster",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:deep_lukewarm_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 20
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:swamp"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:dripstone_caves"
-                  }
-                }
-              ]
-            }
-          ],
-          "weight": 50,
-          "name": "bigfish:raw_slimy_eel"
+          "name": "bigfish:raw_swordfish",
+          "weight": 80
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "conditions": [
+          "name": "bigfish:raw_monkfish",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_swordfish",
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_lobster",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:deep_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_anglerfish",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_swordfish",
+          "weight": 35
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:cold_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_lobster",
+          "weight": 75
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:deep_cold_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:frozen_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_lobster",
+          "weight": 75
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:deep_frozen_ocean"
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_anglerfish",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shark",
+          "weight": 15
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:alternative",
+          "terms": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:river"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:beach"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:stony_shore"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:snowy_beach"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:frozen_river"
-                  }
-                }
-              ]
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biome": "minecraft:river"
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biome": "minecraft:frozen_river"
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biome": "minecraft:beach"
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biome": "minecraft:snowy_beach"
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "biome": "minecraft:stony_shore"
+              }
             }
-          ],
-          "weight": 40,
-          "name": "bigfish:raw_shrimps"
+          ]
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shrimps",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_lobster",
+          "weight": 50
+        }
+      ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:alternative",
+            "terms": [
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:deep_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:lukewarm_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:deep_lukewarm_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:warm_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:cold_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:deep_cold_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:frozen_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:deep_frozen_ocean"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:river"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:frozen_river"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:beach"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:snowy_beach"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:stony_shore"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:lush_caves"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:dripstone_caves"
+                }
+              },
+              {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:swamp"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "bigfish:raw_shrimps",
+          "weight": 100
         }
       ]
     }
