@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "bigfish:mantaray"
+    "item": "bigfish:raw_mantaray"
   },
   "result": "bigfish:cooked_mantaray",
   "experience": 0.35,

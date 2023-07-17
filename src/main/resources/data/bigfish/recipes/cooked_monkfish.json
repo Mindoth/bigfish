@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "ingredient": {
-    "item": "bigfish:monkfish"
+    "item": "bigfish:raw_monkfish"
   },
   "result": "bigfish:cooked_monkfish",
   "experience": 0.35,
