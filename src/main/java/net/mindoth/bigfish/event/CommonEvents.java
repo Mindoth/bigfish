@@ -5,9 +5,12 @@ import net.mindoth.bigfish.BigFish;
 import net.mindoth.bigfish.registry.BigFishItems;
 import net.minecraft.entity.merchant.villager.VillagerProfession;
 import net.minecraft.entity.merchant.villager.VillagerTrades;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.MerchantOffer;
+import net.minecraft.util.FoodStats;
+import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,6 +20,22 @@ import java.util.List;
 
 @Mod.EventBusSubscriber(modid = BigFish.MOD_ID)
 public class CommonEvents {
+
+    @SubscribeEvent
+    public static void onPlayerAte(final LivingEntityUseItemEvent.Finish event) {
+        if ( event.getEntity() instanceof PlayerEntity) {
+            PlayerEntity player = (PlayerEntity)event.getEntity();
+            FoodStats foodData = player.getFoodData();
+            if ( !player.level.isClientSide ) {
+                if ( event.getItem().getItem().equals(BigFishItems.COOKED_SLIMY_EEL.get()) ) {
+                    int addedFood = (int)(1 + Math.random() * (10 - 1));
+                    foodData.setFoodLevel(foodData.getFoodLevel() + addedFood);
+                    float addedSaturation = (float)(0.1 + Math.random() * (1.0 - 0.1));
+                    foodData.setSaturation(foodData.getSaturationLevel() + addedSaturation);
+                }
+            }
+        }
+    }
 
     @SubscribeEvent
     public static void addCustomTrades(VillagerTradesEvent event) {

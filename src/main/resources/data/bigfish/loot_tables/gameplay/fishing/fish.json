@@ -15,6 +15,7 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_slimy_eel",
+          "quality": 0,
           "weight": 100
         }
       ]
@@ -33,22 +34,26 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_mantaray",
-          "weight": 50
+          "quality": 0,
+          "weight": 28
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 10
+          "quality": -1,
+          "weight": 13
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_swordfish",
-          "weight": 35
+          "quality": -3,
+          "weight": 24
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_lobster",
-          "weight": 5
+          "quality": -7,
+          "weight": 35
         }
       ]
     },
@@ -66,22 +71,26 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 15
+          "quality": 0,
+          "weight": 28
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_monkfish",
-          "weight": 50
+          "quality": -1,
+          "weight": 13
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_swordfish",
-          "weight": 30
+          "quality": -3,
+          "weight": 24
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_lobster",
-          "weight": 5
+          "quality": -7,
+          "weight": 35
         }
       ]
     },
@@ -99,12 +108,14 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 20
+          "quality": 0,
+          "weight": 22
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_swordfish",
-          "weight": 80
+          "quality": -6,
+          "weight": 78
         }
       ]
     },
@@ -122,22 +133,26 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 15
+          "quality": 0,
+          "weight": 28
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_monkfish",
-          "weight": 50
+          "quality": -2,
+          "weight": 26
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_swordfish",
-          "weight": 30
+          "quality": -1,
+          "weight": 11
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_lobster",
-          "weight": 5
+          "quality": -7,
+          "weight": 35
         }
       ]
     },
@@ -155,17 +170,20 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_anglerfish",
-          "weight": 50
+          "quality": 0,
+          "weight": 16
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 15
+          "quality": -3,
+          "weight": 39
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_swordfish",
-          "weight": 35
+          "quality": -9,
+          "weight": 45
         }
       ]
     },
@@ -183,12 +201,14 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 25
+          "quality": 0,
+          "weight": 22
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_lobster",
-          "weight": 75
+          "quality": -6,
+          "weight": 78
         }
       ]
     },
@@ -206,6 +226,7 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
+          "quality": 0,
           "weight": 100
         }
       ]
@@ -224,17 +245,20 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_dark_crab",
-          "weight": 50
+          "quality": 0,
+          "weight": 16
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 25
+          "quality": -3,
+          "weight": 39
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_lobster",
-          "weight": 25
+          "quality": -9,
+          "weight": 45
         }
       ]
     },
@@ -252,12 +276,14 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_anglerfish",
-          "weight": 85
+          "quality": 0,
+          "weight": 22
         },
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shark",
-          "weight": 15
+          "quality": -6,
+          "weight": 78
         }
       ]
     },
@@ -303,13 +329,15 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "bigfish:raw_shrimps",
-          "weight": 50
+          "name": "bigfish:raw_lobster",
+          "quality": 0,
+          "weight": 48
         },
         {
           "type": "minecraft:item",
-          "name": "bigfish:raw_lobster",
-          "weight": 50
+          "name": "bigfish:raw_shrimps",
+          "quality": -4,
+          "weight": 52
         }
       ]
     },
@@ -419,6 +447,7 @@
         {
           "type": "minecraft:item",
           "name": "bigfish:raw_shrimps",
+          "quality": 0,
           "weight": 100
         }
       ]
