@@ -37,32 +37,34 @@ public class BigFishItems {
     public static final RegistryObject<Item> RAW_SHRIMPS = ITEMS.register("raw_shrimps",
             () -> new Item(new Item.Properties().food(BigFishFoods.RAWFISH)));
 
+
+
     public static final RegistryObject<Item> COOKED_DARK_CRAB = ITEMS.register("cooked_dark_crab",
-            () -> new Item(new Item.Properties().food(BigFishFoods.TEN)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.DARK_CRAB)));
 
     public static final RegistryObject<Item> COOKED_MANTARAY = ITEMS.register("cooked_mantaray",
-            () -> new Item(new Item.Properties().food(BigFishFoods.TEN)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.MANTARAY)));
 
     public static final RegistryObject<Item> COOKED_SHARK = ITEMS.register("cooked_shark",
-            () -> new Item(new Item.Properties().food(BigFishFoods.NINE)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.SHARK)));
 
     public static final RegistryObject<Item> COOKED_ANGLERFISH = ITEMS.register("cooked_anglerfish",
-            () -> new Item(new Item.Properties().food(BigFishFoods.NINE)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.ANGLERFISH)));
 
     public static final RegistryObject<Item> COOKED_MONKFISH = ITEMS.register("cooked_monkfish",
-            () -> new Item(new Item.Properties().food(BigFishFoods.EIGHT)));
-
-    public static final RegistryObject<Item> COOKED_LOBSTER = ITEMS.register("cooked_lobster",
-            () -> new Item(new Item.Properties().food(BigFishFoods.EIGHT)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.MONKFISH)));
 
     public static final RegistryObject<Item> COOKED_SWORDFISH = ITEMS.register("cooked_swordfish",
-            () -> new Item(new Item.Properties().food(BigFishFoods.SEVEN)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.SWORDFISH)));
+
+    public static final RegistryObject<Item> COOKED_LOBSTER = ITEMS.register("cooked_lobster",
+            () -> new Item(new Item.Properties().food(BigFishFoods.LOBSTER)));
 
     public static final RegistryObject<Item> COOKED_SLIMY_EEL = ITEMS.register("cooked_slimy_eel",
-            () -> new Item(new Item.Properties().food(BigFishFoods.SEVEN)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.SLIMY_EEL)));
 
     public static final RegistryObject<Item> COOKED_SHRIMPS = ITEMS.register("cooked_shrimps",
-            () -> new Item(new Item.Properties().food(BigFishFoods.FOUR)));
+            () -> new Item(new Item.Properties().food(BigFishFoods.SHRIMPS)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
