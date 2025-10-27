@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "bigfish:shark"
+    "item": "bigfish:raw_shark"
   },
   "result": "bigfish:cooked_shark",
   "experience": 0.35,

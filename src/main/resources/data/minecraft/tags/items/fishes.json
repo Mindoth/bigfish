@@ -1,17 +1,23 @@
 {
   "replace": false,
   "values": [
-    "bigfish:mantaray",
-    "bigfish:anglerfish",
-    "bigfish:shark",
-    "bigfish:monkfish",
-    "bigfish:swordfish",
-    "bigfish:lobster",
+    "bigfish:raw_dark_crab",
+    "bigfish:raw_mantaray",
+    "bigfish:raw_anglerfish",
+    "bigfish:raw_shark",
+    "bigfish:raw_monkfish",
+    "bigfish:raw_swordfish",
+    "bigfish:raw_lobster",
+    "bigfish:raw_slimy_eel",
+    "bigfish:raw_shrimps",
+    "bigfish:cooked_dark_crab",
     "bigfish:cooked_mantaray",
     "bigfish:cooked_anglerfish",
     "bigfish:cooked_shark",
     "bigfish:cooked_monkfish",
     "bigfish:cooked_swordfish",
-    "bigfish:cooked_lobster"
+    "bigfish:cooked_lobster",
+    "bigfish:cooked_slimy_eel",
+    "bigfish:cooked_shrimps"
   ]
 }

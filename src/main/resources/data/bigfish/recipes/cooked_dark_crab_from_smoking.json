@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smoking",
   "ingredient": {
-    "item": "bigfish:dark_crab"
+    "item": "bigfish:raw_dark_crab"
   },
   "result": "bigfish:cooked_dark_crab",
   "experience": 0.35,

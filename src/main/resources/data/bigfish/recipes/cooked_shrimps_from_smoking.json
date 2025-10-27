@@ -1,9 +1,9 @@
 {
   "type": "minecraft:campfire_cooking",
   "ingredient": {
-    "item": "bigfish:raw_shark"
+    "item": "bigfish:raw_shrimps"
   },
-  "result": "bigfish:cooked_shark",
+  "result": "bigfish:cooked_shrimps",
   "experience": 0.35,
   "cookingtime": 600
 }
