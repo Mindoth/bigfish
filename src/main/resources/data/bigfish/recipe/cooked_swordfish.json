@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "bigfish:raw_swordfish"
+  },
+  "result": {
+    "id": "bigfish:cooked_swordfish"
+  }
+}
